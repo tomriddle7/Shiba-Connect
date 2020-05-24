@@ -1,16 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ShibaCoreComponent } from './shiba-core/shiba-core.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShibaCoreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot([
+      { path: '', component: ShibaCoreComponent },
+    ]),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

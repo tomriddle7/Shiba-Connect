@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Shiba-Connect"
+    }
+  },
+  "defaultProject": "Shiba-Connect",
+  "cli": {
+    "analytics": "3bced1ac-018d-4bf5-8713-d7c41ef9c1d9"
+  }
 }
